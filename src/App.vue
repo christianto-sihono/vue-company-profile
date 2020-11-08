@@ -7,7 +7,8 @@
     <Header />
     <router-view/>
     <Footer />
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
+    <BackToTop />
   </div>
 </template>
 
@@ -16,6 +17,8 @@
 import { Component, Vue } from 'vue-property-decorator'
 import Header from '@/components/Header.vue' // @ is an alias to /src
 import Footer from '@/components/Footer.vue'
+
+import BackToTop from '@/components/BackToTop.vue'
 
 // import '@/assets/vendor/jquery/jquery.min.js'
 // import '@/assets/vendor/jquery.easing/jquery.easing.min.js'
@@ -26,12 +29,13 @@ import Footer from '@/components/Footer.vue'
 // import '@/assets/vendor/owl.carousel/owl.carousel.min.js'
 // import '@/assets/vendor/isotope-layout/isotope.pkgd.min.js'
 // import '@/assets/vendor/aos/aos.js'
-// import '@/assets/js/main.js'
+// import '@/assets/js1/main.js'
 
 @Component({
   components: {
     Header,
-    Footer
+    Footer,
+    BackToTop
   }
 })
 export default class Class extends Vue {}

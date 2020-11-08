@@ -2371,3 +2371,59 @@ section {
     }
   }
 } */
+
+.back-to-top-fade-enter-active, 
+.back-to-top-fade-leave-active {
+  transition: opacity .7s;
+}
+.back-to-top-fade-enter, 
+.back-to-top-fade-leave-to {
+  opacity: 0;
+}
+
+.vue-back-to-top {
+  cursor:pointer;
+  position: fixed;
+  z-index: 1000;
+}
+
+.vue-back-to-top .default {
+  position: fixed;
+  background-color: #68A4C4;
+  border-radius: 3px;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+  right: 15px;
+  bottom: 15px;
+/* 
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  right: 15px;
+  bottom: 15px;
+  background: #68A4C4;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999; */
+}
+
+.vue-back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.vue-back-to-top .default span{
+  color:#ffffff;
+}
+
+.vue-back-to-top--is-footer {
+  bottom: 50% !important;
+  position: absolute;
+  transform: translateY(50%);
+}

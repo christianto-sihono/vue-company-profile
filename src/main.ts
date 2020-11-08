@@ -16,7 +16,9 @@ import '@/assets/css/style.css'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+// import $ from 'jquery'
 
+// var $ = require('jquery')
 AOS.init()
 
 Vue.config.productionTip = false
